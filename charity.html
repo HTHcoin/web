@@ -295,6 +295,82 @@ appreciated and will go to good use for the cause.</p>
 
 
 
+<script>
+    var $progress = $(".progress"),
+        $bar = $(".progress__bar"),
+        update,
+        resetColors,
+        hth = 0,
+        btc = 0,
+        hthToBtc = 0,
+        to,
+        btcaddr = '3Kmqb2d9fBTq7kr66Hp5N47661QzS9dKoQ',
+        hthAddress = 'HF5rjaXU7s3QCKuSb6uYJvAeVa3qWC3MKm';
+    resetColors = function() {
+        $bar
+            .removeClass("progress__bar--green")
+            .removeClass("progress__bar--yellow")
+            .removeClass("progress__bar--orange")
+            .removeClass("progress__bar--blue");
+        $progress
+            .removeClass("progress--complete");
+    };
+    update = function() {
+        $.getJSON('https://api.coingecko.com/api/v3/coins/help-the-homeless-coin', function(res) {
+            var price = res.tickers[0].converted_last.btc;
+            /*price = price.split('0.')[1];
+            price = +price;*/
+            $('#jsLastPrice').text("1 HTH = " + price + " BTC");
+        }).fail(function(e) {
+            console.log(e);
+        });
+        $.getJSON('https://blockchain.info/q/addressbalance/'+ btcaddr +'?confirmations=1', function(balance) {
+            btc = +balance;
+        });
+        $.getJSON('https://api.crypto-bridge.org/api/v1/ticker', function(d) {
+            d.forEach(function(ticker) {
+                if(ticker.id === 'HTH_BTC') {
+                    hthToBtc = +ticker.last;
+                    return false;
+                }
+            });
+        });
+        $.getJSON('https://explorer.hth.world/ext/getaddress/' + hthAddress, function(res) {
+            console.log(res);
+            hth = +res.balance * 100000000;
+        }).fail(function(e) {
+            console.log(e);
+        });
+        $('.js-hth-addy').each(function(i, e) {
+            var addy = $(e).data('addy');
+            $.getJSON('https://explorer.hth.world/ext/getaddress/' + addy, function(res) {
+                $(e).text(parseInt(res.received).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+            });
+        });
+        to = setInterval(function() {
+            if(hth) {
+                clearInterval(to);
+                to = null;
+                $('.js-raised').text(parseInt(hth / 100000000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+            }
+        }, 60000);
+        setTimeout(function() {
+            update();
+        }, 60000 * 5);
+    };
+    $progress.addClass("progress--active");
+    update();
+    var clipboard = new ClipboardJS('.js-copy');
+    clipboard.on('success', function(e) {
+        alert('Address Copied!');
+        e.clearSelection();
+    });
+    var clip = new ClipboardJS('.js-hth-copy');
+    clip.on('success', function(e) {
+        alert('Address Copied!');
+        e.clearSelection();
+    });
+</script>
 
 
 
