@@ -1,900 +1,699 @@
-﻿<!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <title>https://hthcoin.github.io/web/</title>
-
-    <!-- Stylesheets -->
-    <link href="HTH/bootstrap.css" rel="stylesheet">
-    <link href="HTH/settings.css" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->
-    <link href="HTH/layers.css" rel="stylesheet" type="text/css"><!-- REVOLUTION LAYERS STYLES -->
-    <link href="HTH/navigation.css" rel="stylesheet" type="text/css"><!-- REVOLUTION NAVIGATION STYLES -->
-    <link href="HTH/style.css" rel="stylesheet">
-    <link href="HTH/responsive.css" rel="stylesheet">
-    <!--<link href="HTH/flaticon.css" rel="stylesheet">-->
-    <link href="https://hthcoin.world/favicon.ico" rel="icon">
-    <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+	 
+    <title>HTH Coin | Home</title>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script type="text/javascript" async="" src="HTH/analytics.js"></script><script async="" src="HTH/js.js"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/c55232eb98/GPUDiscord/style.css">
+   
+    <!-- Font awesome -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">   
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">          
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">          
 
-        gtag('config', 'UA-121537271-1');
-    </script>
+    <!-- Main style sheet -->
+    <link href="assets/css/style.css" rel="stylesheet">    
+	  <link href="Partners/style.css" rel="stylesheet">
 
-</head>
+   
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,700' rel='stylesheet' type='text/css'>
+    
 
-<body>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-<div class="page-wrapper">
-    <!-- Preloader -->
-    <div class="preloader" style="display: none;"></div>
+  </head>
+  <body> 
 
-    <!-- Main Header-->
-    <header class="main-header">
+  <!--START SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#">
+      <i class="fa fa-angle-up"></i>      
+    </a>
+  <!-- END SCROLL TOP BUTTON -->
 
-        <!-- Header Lower -->
-        <div class="header-lower">
-            <div class="main-box clearfix">
-                <!--Logo Box-->
-                <div class="logo-box">
-                    <div class="logo"><a href="https://hthcoin.github.io/web/index.html"><img src="HTH/logo.png" alt="" width="70"></a></div>
-                </div>
-                <!--Nav Outer-->
-                <div class="nav-outer clearfix">
-                    <!-- Main Menu -->
-                    <nav class="main-menu">
-                        <div class="navbar-header">
-                            <!-- Toggle Button -->
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
 
-                        <div class="navbar-collapse collapse clearfix">
-                            <div id="jsLastPrice" style="position: absolute;right: 0;color: #debf12; font-weight: bold;">1 HTH = 0.00000002 BTC</div>
-                            <ul class="navigation clearfix">
-                                <li class="current dropdown">
-                                    <a href="https://hthcoin.github.io/web/index.html">Home</a>
-                                    <ul>
-                                        <li><a href="https://hthcoin.github.io/web/index.html">Homepage</a></li>
-                                        <li><a href="https://hthcoin.github.io/web/index.html#about" data-target="#about" class="scroll-to-target">About us</a></li>
-                                        <li><a href="https://hthcoin.github.io/web/index.html#features" data-target="#features" class="scroll-to-target">Features</a></li>
-                                        <li><a href="https://hthcoin.github.io/web/index.html#roadmap" data-target="#roadmap" class="scroll-to-target">Roadmap</a></li>
-                                        <li><a href="https://hthcoin.github.io/web/index.html#specs" data-target="#specs" class="scroll-to-target">Specs</a></li>
-                                        <li><a href="https://hthcoin.github.io/web/index.html#team" data-target="#team" class="scroll-to-target">Team</a></li>
-                                    </ul>
-                                <div class="dropdown-btn"><span class="fa fa-angle-down" style="color:#fcc005"></span></div></li>
-                                
-                                <li class="dropdown">
-                                    <a href="#!" target="_blank">Charity</a>
-                                    <ul>
-                                        <li><a href="https://hthcoin.github.io/web/Charity.html">Charity</a></li>
-                                        <li class=""><a href="https://hthcoin.github.io/web/Partners.html">Partners</a></li>
-                                        <li><a href="https://helpthehomelessworldwide.org/">HTH Worldwide</a></li>
-                                       
-                                    </ul>
-                               <div class="dropdown-btn"><span class="fa fa-angle-down" style="color:#fcc005"></span></div></li>
-                                
-                                
-                                <li class="dropdown">
-                                    <a href="#!" target="_blank">Exchanges</a>
-                                    <ul>
-                                        <li><a href="https://wallet.crypto-bridge.org/market/BRIDGE.HTH_BRIDGE.BTC" target="_blank">Crypto-Bridge</a></li>
-                                        <li><a href="https://smartrade.com/" target="_blank">Smartrade</a></li>
-                                    </ul>
-                                <div class="dropdown-btn"><span class="fa fa-angle-down" style="color:#fcc005"></span></div></li>
-                                                                
-                                <li class="dropdown">
-                                    <a href="#!" target="_blank">Information</a>
-                                    <ul>
-                                        <li><a href="https://hthcoin.github.io/web/Resources.html">Resources</a></li>
-                                        <li><a href="https://hthcoin.github.io/web/Faq.html">FAQ</a></li>
-                                         <li><a href="https://github.com/HTHcoin/HTH/wiki/HTH-Help-The-Homeless-Coin-wiki/" target="_blank">Wiki</a></li>
-                                         <li><a href="https://github.com/HTHcoin/HTH/blob/master/Light_Paper.pdf">Light Paper</a></li>
-                                    </ul>
-                                <div class="dropdown-btn"><span class="fa fa-angle-down" style="color:#fcc005"></span></div></li>
-                                <li class=""><a href="https://hthcoin.github.io/web/Downloads.html">Downloads</a></li>
-                                <li><a href="https://explorer.hth.world/" target="_blank">Explorer</a></li>
-                            </ul>
-                         
-                        </div>
-                    </nav>
-                    <!-- Main Menu End-->
-                </div>
-            </div>
+  <!-- Start menu -->
+  <section id="mu-menu">
+    <nav class="navbar navbar-default" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->              
+          <!-- TEXT BASED LOGO -->
+         <!-- <a class="navbar-brand" href="index.html"><i class="fa fa-university"></i><span>Varsity</span></a> -->
+          <!-- IMG BASED LOGO  -->
+          <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
         </div>
-
-        <!-- Sticky Header -->
-        <div class="sticky-header">
-            <div class="auto-container clearfix">
-                <!--Logo-->
-                <div class="logo pull-left">
-                    <a href="https://hthcoin.github.io/web/index.html" title=""><img src="HTH/logo.png" alt="" title="" style="height: 50px; width: auto;"></a>
-                </div>
-                <!--Right Col-->
-                <div class="pull-right">
-                    <!-- Main Menu -->
-                    <nav class="main-menu">
-                        <div class="navbar-collapse collapse clearfix">
-                            <ul class="navigation clearfix">
-                                <li class="current dropdown">
-                                    <a href="https://hthcoin.github.io/web/">Home</a>
-                                    <ul>
-                                        <li><a href="https://hthcoin.github.io/web/index.html">Homepage</a></li>
-                                     <li><a href="https://hthcoin.github.io/web/index.html#about" data-target="#about" class="scroll-to-target">About us</a></li>
-                                        <li><a href="https://hthcoin.github.io/web/index.html#features" data-target="#features" class="scroll-to-target">Features</a></li>
-                                        <li><a href="https://hthcoin.github.io/web/index.html#roadmap" data-target="#roadmap" class="scroll-to-target">Roadmap</a></li>
-                                        <li><a href="https://hthcoin.github.io/web/index.html#specs" data-target="#specs" class="scroll-to-target">Specs</a></li>
-                                        <li><a href="https://hthcoin.github.io/web/index.html#team" data-target="#team" class="scroll-to-target">Team</a></li>
-                                    </ul>
-                                <div class="dropdown-btn"><span class="fa fa-angle-down" style="color:#fcc005"></span></div></li>
-                               <li class="dropdown">
-                                    <a href="#!" target="_blank">Charity</a>
-                                    <ul>
-                                        <li><a href="https://hthcoin.github.io/web/Charity.html">Charity</a></li>
-                                        <li class=""><a href="https://hthcoin.github.io/web/Partners.html">Partners</a></li>
-                                        <li><a href="https://helpthehomelessworldwide.org/">HTH Worldwide</a></li>
-                                       
-                                    </ul>
-                               <div class="dropdown-btn"><span class="fa fa-angle-down" style="color:#fcc005"></span></div></li>
-                                
-                                
-                                <li class="dropdown">
-                                    <a href="#!" target="_blank">Exchanges</a>
-                                    <ul>
-                                        <li><a href="https://wallet.crypto-bridge.org/market/BRIDGE.HTH_BRIDGE.BTC" target="_blank">Crypto-Bridge</a></li>
-                                        <li><a href="https://smartrade.com/" target="_blank">Smartrade</a></li>
-                                    </ul>
-                                <div class="dropdown-btn"><span class="fa fa-angle-down" style="color:#fcc005"></span></div></li>
-                              <li class="dropdown">
-                                    <a href="#!" target="_blank">Information</a>
-                                    <ul>
-                                        <li><a href="https://hthcoin.github.io/web/Resources.html">Resources</a></li>
-                                        <li><a href="https://hthcoin.github.io/web/Faq.html">FAQ</a></li>
-                                         <li><a href="https://github.com/HTHcoin/HTH/wiki/HTH-Help-The-Homeless-Coin-wiki/" target="_blank">Wiki</a></li>
-                                         <li><a href="https://github.com/HTHcoin/HTH/blob/master/Light_Paper.pdf">Light Paper</a></li>
-                                    </ul>
-<div class="dropdown-btn"><span class="fa fa-angle-down" style="color:#fcc005"></span></div></li>
-                                <li class=""><a href="https://hthcoin.github.io/web/Downloads.html">Downloads</a></li>
-                                <li><a href="https://explorer.hth.world/" target="_blank">Explorer</a></li>
-                            </ul>
-                            
-                        </div>
-                    </nav><!-- Main Menu End-->
-                </div>
-            </div>
-        </div>
-    </header>
-    <!--End Main Header -->
-<!--Main Slider-->
-<section class="main-slider">
-    <div class="forcefullwidth_wrapper_tp_banner" id="rev_slider_one_forcefullwidth" style="position:relative;width:100%;height:auto;margin-top:0px;margin-bottom:0px"><div class="rev_slider_wrapper fullwidthbanner-container tp-mouseover" id="rev_slider_one_wrapper" data-source="gallery" style="margin-top: 0px; margin-bottom: 0px; position: absolute; overflow: visible; height: 1050px; width: 2379px; left: 0px;">
-        <div class="rev_slider fullwidthabanner revslider-initialised tp-simpleresponsive rev_redraw_on_blurfocus" id="rev_slider_one" data-version="5.4.1" style="max-height: 1050px; margin-top: 0px; margin-bottom: 0px; height: 1050px;" data-slideactive="rs-1691">
-            <ul class="tp-revslider-mainul" style="visibility: visible; display: block; overflow: hidden; width: 100%; height: 100%; max-height: none;">
-                <!-- Slide 1 -->
-                <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1691" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/crisis.jpg" data-title="Slide Title" data-transition="parallaxvertical" class="tp-revslider-slidesli active-revslide" style="width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1; background-color: rgba(255, 255, 255, 0);">
-
-                    <div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; backface-visibility: hidden; transform: translate3d(0px, 0px, 0px); visibility: inherit; opacity: 1;"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img alt="" class="rev-slidebg defaultimg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="images/crisis.jpg">--><div class="tp-dottedoverlay yes"></div><div class="tp-bgimg defaultimg " data-bgcolor="undefined" style="background-repeat: no-repeat; background-image: url(&quot;images/crisis.jpg&quot;); background-size: cover; background-position: center center; width: 75%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;" src="images/crisis.jpg"></div></div>
-
-                    <div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 1090px; top: 225px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);"><div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-whitespace="nowrap" data-fontsize="['64','40','36','24']" data-width="auto" data-textalign="center" data-hoffset="['0','0','0','0']" data-voffset="['-200','-200','-200','-200']" data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" data-frames="[{&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:1000,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;mask&quot;:&quot;x:0;y:0;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" id="layer-454840923" style="visibility: inherit; transition: none 0s ease 0s; text-align: center; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 64px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: translate3d(0px, 0px, 0px); transform-origin: 50% 50% 0px;">
-                        <img src="HTH/logo.png" alt="" style="max-width: 200px !important; max-height: 200px !important; width: 370px; height: 370px;"> 
-                    </div></div></div></div>
-
-                    <div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 951px; top: 448px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);"><div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-whitespace="nowrap" data-fontsize="['64','40','36','24']" data-width="auto" data-textalign="center" data-hoffset="['0','0','0','0']" data-voffset="['-30','-30','-30','-30']" data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" data-frames="[{&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:1000,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;mask&quot;:&quot;x:0;y:0;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" id="layer-27224089" style="visibility: inherit; transition: none 0s ease 0s; text-align: center; line-height: 23px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 64px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: translate3d(0px, 0px, 0px); transform-origin: 50% 50% 0px;">
-                        <h2><span class="style-font">Help The Homeless Coin</span></h2>
-                    </div></div></div></div>
-
-                     <div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 980px; top: 602px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);"><div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-whitespace="nowrap" data-width="auto" data-hoffset="['0','0','0','0']" data-voffset="['115','105','130','130']" data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']" data-frames="[{&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;speed&quot;:1500,&quot;to&quot;:&quot;o:1;&quot;,&quot;delay&quot;:1000,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;mask&quot;:&quot;x:0;y:0;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" id="layer-286713478" style="visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 23px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 14px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: translate3d(0px, 0px, 0px); transform-origin: 50% 50% 0px;">
-                        <a href="#about" class="theme-btn btn-style-one scroll-to-target" data-target="#about"><span>Learn More</span></a>
-                        <a href="https://hthcoin.github.io/web/Downloads.html" class="theme-btn btn-style-one"><span>Download Wallet</span></a>
-                    </div></div></div></div>
-                </li>
-            </ul>
-        <div class="tp-loader off" style="display: none;"><div class="dot1"></div><div class="dot2"></div><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="tp-bannertimer" style="visibility: hidden; width: 0%;"></div><div class="tp-leftarrow tparrows metis" style="top: 50%; transform: matrix(1, 0, 0, 1, 0, -30); left: 0px;"></div><div class="tp-rightarrow tparrows metis" style="top: 50%; transform: matrix(1, 0, 0, 1, -60, -30); left: 100%;"></div></div>
-    </div><div class="tp-fullwidth-forcer" style="width: 100%; height: 1050px;"></div></div>
-</section>
-<!--End Main Slider-->
-
-<!-- Work Section -->
-<section class="work-section" id="about">
-    <div class="auto-container">
-        <!-- Work Steps -->
-        <div class="steps-outer">
-            <div class="row clearfix">
-                <div class="content-column col xs-12">
-                    <div class="sec-title">
-                        <span class="title"></span>
-                        <h2><span>About Us</span></h2>
-                        <div class="separator-two"></div>
-                    </div>
-                    <div class="inner-box">
-                        <p style="font-size: 2.1rem;line-height: 3.1rem;">The team at <strong>Help The Homeless Coin</strong> is dedicated to supporting and focusing on those that need assistance by aiding charities with boots on the ground.</p>
-                        <p>&nbsp;</p>
-                        <p style="font-size: 2.1rem;line-height: 3.1rem;">We
- will provide help with shelters, food, clothing, job seminars, access 
-to local employers, and rehabilitation to help rebuild the lives of the 
-homeless.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Work Section -->
-
-<!-- About Section-->
-<section class="about-section">
-    <div class="auto-container">
-        <div class="row clearfix">
-            <!--Content Column-->
-            <div class="content-column pull-right col-md-6 col-sm-12 col-xs-12">
-                <div class="inner-column">
-                    <div class="sec-title">
-                        <span class="title"></span>
-                        <h2><span>Our Mantra Is</span></h2>
-                        <div class="separator"></div>
-                    </div>
-                    <div class="text">
-                        <p>"Every human on Earth has the right to a fair
- chance in life. But around the world, millions are being left behind – 
-disadvantaged, endangered and deprived of everything they need to 
-thrive. It doesn’t need to be this way. Investing in local and global 
-communities where the poorest people live not only improves their lives 
-but also the broader community. Let us break the vicious cycle of 
-poverty.</p>
-                        <p>&nbsp;</p>
-                        <p>The <strong>#FairChance</strong> campaign 
-that HTH is launching asks you to take actions, to spread awareness. To 
-not only hold governments but yourself accountable for ensuring a better
- future for every person. This all starts here."</p>
-                    </div>
-                    <div class="btn-box">
-                        <a href="https://hthcoin.github.io/web/Faq.html" class="theme-btn btn-style-one"><span>Read our FAQ</span></a>
-                    </div>
-                </div>
-            </div>
-
-            <!--Image Column-->
-            <div class="image-column col-md-6 col-sm-12 col-xs-12">
-                <div class="inner-column">
-                    <figure class="image-1"><img src="HTH/about-homeless2.jpg" alt=""></figure>
-                    <figure class="image-2"><img src="HTH/about-homeless.jpg" alt=""></figure>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--End About Section-->
-
-<!-- Causes Section -->
-<section class="causes-section" id="features">
-    <div class="auto-container">
-        <div class="sec-title text-center">
-            <h2><span>Features</span></h2>
-            <div class="separator-two"></div>
-        </div>
-
-        <div class="fact-counter">
-            <div class="row clearfix">
-                <!--Column-->
-                <div class="counter-column col-md-3 col-sm-6 col-xs-12">
-                    <div class="inner">
-                        <div class="count-box">
-                            <img src="images/people.svg"/>
-                            <h4 class="counter-title">Guaranteed charity fees directly from the blockchain</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Column-->
-                <div class="counter-column col-md-3 col-sm-6 col-xs-12">
-                    <div class="inner">
-                        <div class="count-box">
-                            <img src="images/love-planet.svg"/>
-                            <h4 class="counter-title">Development funds</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Column-->
-                <div class="counter-column col-md-3 col-sm-6 col-xs-12">
-                    <div class="inner">
-                        <div class="count-box">
-                            <img src="images/heart-2.svg"/>
-                            <h4 class="counter-title">Active community with an online and real-world presence</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Column-->
-                <div class="counter-column col-md-3 col-sm-6 col-xs-12">
-                    <div class="inner">
-                        <div class="count-box">
-                           <img src="images/pacifism.svg"/>
-                            <h4 class="counter-title">A dedicated and passionate team of founding members</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- End Causes Section -->
-
-<!-- Roadmap Section-->
-<div class="fun-fact-section" id="roadmap" style="background-image:url(images/people-1550501_1280.jpg);">
-    <div class="auto-container">
-        <div class="sec-title light text-center">
-            <h2><span>Roadmap</span></h2>
-        </div>
-
-        <div class="row clearfix">
-            <!-- Cause Block -->
-            <div class="cause-block col-md-3 col-sm-6 col-xs-12">
-                <div class="inner-box">
-                    <div class="lower-content">
-                        <h2><a href="#!">Q2 2018</a></h2>
-                        <p style="text-align: left;">
-                            - Pre ANN Announcement <br>
-                            - Website live<br>
-                        </p>
-
-                        <div class="progress-bar">
-                            <div class="bar-inner"><div class="bar progress-line" data-width="100"><div class="bar-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="100">0</span>%</div></div></div></div>
-                        </div>
-
-                        <div class="info-box clearfix">
-                            <a href="#!" class="raised">Status: <span>Completed</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Cause Block -->
-            <div class="cause-block col-md-3 col-sm-6 col-xs-12">
-                <div class="inner-box">
-                    <div class="lower-content">
-                        <h2><a href="#!">Q3 2018</a></h2>
-                        <p style="text-align: left;">
-                            - Launch &amp; release of the HTH Coin Wallet <br>
-                            - Listing on Crypto-Bridge paid by the HTH Coin team <br>
-                            - Quarterly updates on charity raised<br>
-                            - First charity partnership<br>
-                            - Charity care drop<br>
-                            - Masternode fork release 19/07/08
-                        </p>
-
-                        <div class="progress-bar">
-                            <div class="bar-inner"><div class="bar progress-line" data-width="100"><div class="bar-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="100">100</span>%</div></div></div></div>
-                        </div>
-
-                        <div class="info-box clearfix">
-                            <a href="#!" class="raised">Status: <span>Completed</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Cause Block -->
-            <div class="cause-block col-md-3 col-sm-6 col-xs-12">
-                <div class="inner-box">
-                    <div class="lower-content">
-                        <h2><a href="#!">Q4 2018</a></h2>
-                        <p style="text-align: left;">
-                            - Whitepaper released<br>
-                            - Cold Weather Campaign<br>
-                            - Adding multiple exchanges<br>
-                            - Quarterly updates on charity raised<br>
-                            - Quarterly coin burn program
-                        </p>
-
-                        <div class="progress-bar">
-                            <div class="bar-inner"><div class="bar progress-line" data-width="0"><div class="bar-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="0">0</span>%</div></div></div></div>
-                        </div>
-
-                        <div class="info-box clearfix">
-                            <a href="#!" class="raised">Status: <span>In Progress</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Cause Block -->
-            <div class="cause-block col-md-3 col-sm-6 col-xs-12">
-                <div class="inner-box">
-                    <div class="lower-content">
-                        <h2><a href="#!">Q1 2019</a></h2>
-                        <p style="text-align: left;">
-                            - Android wallet for HTH Coin<br>
-                            - iOS wallet for HTH Coin<br>
-                            - Quarterly updates on charity raised
-                        </p>
-
-                        <div class="progress-bar">
-                            <div class="bar-inner"><div class="bar progress-line" data-width="0"><div class="bar-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="0">0</span>%</div></div></div></div>
-                        </div>
-
-                        <div class="info-box clearfix">
-                            <a href="#!" class="raised">Status: <span style="color: #a7a7a7">Pending</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--End Roadmap Section-->
-
-<!-- Specifications Section -->
-<section class="news-section" id="specs">
-    <div class="auto-container">
-        <div class="sec-title text-center">
-            <h2><span>Specifications</span></h2>
-            <div class="separator-two"></div>
-        </div>
-
-        <div class="row clearfix">
-            <div class="content-column col-xs-12">
-                <div class="inner-column">
-                    <table width="100%">
-                        <tbody><tr>
-                            <td style="text-align: right; width: 40%; padding-right: 2%">Coin Name: </td>
-                            <td style="font-weight: bold; width: 40%; padding-left: 2%">Help The Homeless</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: right; width: 40%; padding-right: 2%">Ticker:</td>
-                            <td style="font-weight: bold; width: 40%; padding-left: 2%">HTH</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: right; width: 40%; padding-right: 2%">Algo:</td>
-                            <td style="font-weight: bold; width: 40%; padding-left: 2%">x16r</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: right; width: 40%; padding-right: 2%">Block Reward:</td>
-                            <td style="font-weight: bold; width: 40%; padding-left: 2%">2500 (halving every 1 year)</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: right; width: 40%; padding-right: 2%">Block Time:</td>
-                            <td style="font-weight: bold; width: 40%; padding-left: 2%">60 seconds</td>
-                        </tr>
-                        <tr>
-                        </tr><tr>
-                            <td style="text-align: right; width: 40%; padding-right: 2%">Mature Time:</td>
-                            <td style="font-weight: bold; width: 40%; padding-left: 2%">360 blocks</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: right; width: 40%; padding-right: 2%">Retargeting Diff:</td>
-                            <td style="font-weight: bold; width: 40%; padding-left: 2%">DGW3</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: right; width: 40%; padding-right: 2%">Masternode Collateral:</td>
-                            <td style="font-weight: bold; width: 40%; padding-left: 2%">2 500 000</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: right; width: 40%; padding-right: 2%">Masternode Reward:</td>
-                            <td style="font-weight: bold; width: 40%; padding-left: 2%">25% of block reward (after charity &amp; dev fees)</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: right; width: 40%; padding-right: 2%">PoW Reward:</td>
-                            <td style="font-weight: bold; width: 40%; padding-left: 2%">75% of block reward (after charity &amp; dev fees)</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: right; width: 40%; padding-right: 2%">Anti Instamine:</td>
-                            <td style="font-weight: bold; width: 40%; padding-left: 2%">first 500 blocks will reward 250 HTH</td>
-                        </tr>
-                    </tbody></table>
-                    <h4 style="text-align: center; padding-top: 20px; font-weight: bold;">15% FROM BLOCK REWARD TO CHARITABLE FUNDS TO THE HOMELESS AND 10% TO DEVELOPMENT FUNDS</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Specifications -->
-
-<!-- Volunteers Section -->
-<section id="team" class="volunteers-section alternate">
-    <div class="auto-container">
-        <div class="sec-title text-center">
-            <h2><span>The Team</span></h2>
-            <span class="separator-two"></span>
-        </div>
-
-        <div class="row clearfix">
-            <div class="col-md-1 hide-on-med-and-low"></div>
-            <!-- Volunteer Block 
-            <div class="volunteer-block col-md-2 col-sm-6 col-xs-12">
-                <div class="inner-box">
-                    <div class="image-box">
-                        <figure><img src="HTH/recom.png" alt=""></figure>
-                    </div>
-                    <div class="overlay-box">
-                        <div class="content">
-                            <h3 class="name"><a href="#">RECOM</a></h3>
-                            <span class="designation">Founder</span>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- Volunteer Block 
-            <div class="volunteer-block col-md-2 col-sm-6 col-xs-12">
-                <div class="inner-box">
-                    <div class="image-box">
-                        <figure><img src="HTH/zeus.png" alt=""></figure>
-                    </div>
-                    <div class="overlay-box">
-                        <div class="content">
-                            <h3 class="name"><a href="#">ZEUS</a></h3>
-                            <span class="designation">Founder</span>
-                        </div>
-                    </div>
-                </div>
-            </div>  -->
-
-            <!-- Volunteer Block -->
-            <div class="volunteer-block col-md-2 col-sm-6 col-xs-12">
-                <div class="inner-box">
-                    <div class="image-box">
-                        <figure><img src="HTH/coderabbit.png" alt=""></figure>
-                    </div>
-                    <div class="overlay-box">
-                        <div class="content">
-                            <h3 class="name"><a href="#">Code Rabbit</a></h3>
-                            <span class="designation">Founder</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Volunteer Block -->
-            <div class="volunteer-block col-md-2 col-sm-6 col-xs-12">
-                <div class="inner-box">
-                    <div class="image-box">
-                        <figure><img src="HTH/devilking6105.png" alt=""></figure>
-                    </div>
-                    <div class="overlay-box">
-                        <div class="content">
-                            <h3 class="name"><a href="#">Michael H</a></h3>
-                            <span class="designation">Founder & Developer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Volunteer Block -->
-            <div class="volunteer-block col-md-2 col-sm-6 col-xs-12">
-                <div class="inner-box">
-                    <div class="image-box">
-                        <figure><img src="HTH/mrblackstuff.png" alt=""></figure>
-                    </div>
-                    <div class="overlay-box">
-                        <div class="content">
-                            <h3 class="name"><a href="#">Cecil D</a></h3>
-                            <span class="designation">Founder</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="row clearfix">
-
-            <div class="col-md-1 hide-on-med-and-low"></div>
-
-            <!-- Volunteer Block -->
-            <div class="volunteer-block col-md-2 col-sm-6 col-xs-12">
-                <div class="inner-box">
-                    <div class="image-box">
-                        <figure><img src="HTH/dk808.png" alt=""></figure>
-                    </div>
-                    <div class="overlay-box">
-                        <div class="content">
-                            <h3 class="name"><a href="#">DK808</a></h3>
-                            <span class="designation">Founder</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Volunteer Block -->
-            <div class="volunteer-block col-md-2 col-sm-6 col-xs-12">
-                <div class="inner-box">
-                    <div class="image-box">
-                        <figure><img src="HTH/duhjeff.png" alt=""></figure>
-                    </div>
-                    <div class="overlay-box">
-                        <div class="content">
-                            <h3 class="name"><a href="#">DuhJeff</a></h3>
-                            <span class="designation">Founder</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Volunteer Block -->
-            <div class="volunteer-block col-md-2 col-sm-6 col-xs-12">
-                <div class="inner-box">
-                    <div class="image-box">
-                        <figure><img src="HTH/undefined.png" alt=""></figure>
-                    </div>
-                    <div class="overlay-box">
-                        <div class="content">
-                            <h3 class="name"><a href="#">Circuit Breaker</a></h3>
-                            <span class="designation">Founder & Developer</span>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-
-            <!-- Volunteer Block -->
-            <div class="volunteer-block col-md-2 col-sm-6 col-xs-12">
-                <div class="inner-box">
-                    <div class="image-box">
-                        <figure><img src="HTH/altcoincash.png" alt=""></figure>
-                    </div>
-                    <div class="overlay-box">
-                        <div class="content">
-                            <h3 class="name"><a href="#">Altcoin Cash</a></h3>
-                            <span class="designation">Founder</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Volunteer Block 
-            <div class="volunteer-block col-md-2 col-sm-6 col-xs-12">
-                <div class="inner-box">
-                    <div class="image-box">
-                        <figure><img src="HTH/cryptooutlaws.png" alt=""></figure>
-                    </div>
-                    <div class="overlay-box">
-                        <div class="content">
-                            <h3 class="name"><a href="#">CRYPTOOUTLAWS</a></h3>
-                            <span class="designation">Founder</span>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+            <li class="active"><a href="index.html">Home</a></li>            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Partners <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="partners.html">Partners</a></li>                
+                <li><a href="cryptopartners.html">Crypto Partners</a></li>
+		       <li><a href="charity.html">HTH Charity</a></li>
+		
+		      
+              </ul>
+            </li>           
+		  <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Exchanges <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://wallet.crypto-bridge.org/market/BRIDGE.HTH_BRIDGE.BTC">Crypto-Bridge</a></li>                
+                <li><a href="https://smartrade.com/">SmartTrade</a></li>    
+		<li><a href="https://novaexchange.com/market/BTC_HTH">Nova Exchange</a></li>
+		<li><a href="https://www.probitex.com/trade/index/market/hth_btc">ProBitEx</a></li>
+              </ul>
+            </li> 		      
+           </li>      
             
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="resources.html">Resources</a></li>                
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="https://github.com/HTHcoin/HTH/wiki/HTH-Help-The-Homeless-Coin-wiki/">HTH Wiki</a></li>
+                <li><a href="https://github.com/HTHcoin/HTH/blob/master/Light_Paper.pdf">Light Paper</a></li>
+              </ul>
+            </li>            
+		<li><a href="downloads.html">Downloads</a></li> 
+		<li><a href="https://explorer.hth.world/">Explorer</a></li>
+		   <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>                     
+        </div><!--/.nav-collapse -->        
+      </div>     
+    </nav>
+  </section>
+  <!-- End menu -->
+	  
+  <!-- Start search box
+  <div id="mu-search">
+    <div class="mu-search-area">      
+      <button class="mu-search-close"><span class="fa fa-close"></span></button>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">            
+            <form class="mu-search-form">
+              <input type="search" placeholder="Type Your Keyword(s) & Hit Enter">              
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-</section>
-<!-- End Volunteers Section -->
+  </div>
+  <!-- End search box -->
+	  
+	  
+<!-- Start Slider -->
+  <section id="mu-slider">
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+      <div class="mu-slider-img">
+        <figure>
+          <img src="assets/img/slider/1.jpg" alt="img">
+        </figure>
+      </div>
+      <div class="mu-slider-content">
+        
+        <span></span>
+        <h2>Welcome to Help The Homeless Coin</h2>
+        <p>A Cryptocurrency aimed at helping the homeless</p>
+        <a href="https://github.com/HTHcoin/HTH/wiki/HTH-Help-The-Homeless-Coin-wiki" class="mu-read-more-btn">Learn More</a>
+      </div>
+    </div>
+    <!-- Start single slider item -->
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+      <div class="mu-slider-img">
+        <figure>
+          <img src="assets/img/slider/2.png" alt="img">
+        </figure>
+      </div>
+      <div class="mu-slider-content">
+        <span></span>
+        <h2>HTH Partners</h2>
+        <p>Come meet our HTH Partners and Donate today!!</p>
+        <a href="https://github.com/HTHcoin/HTH/wiki/HTH-Partners" class="mu-read-more-btn">Learn More</a>
+      </div>
+    </div>
+    <!-- Start single slider item -->
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+      <div class="mu-slider-img">
+        <figure>
+          <img src="assets/img/slider/3.jpg" alt="img">
+        </figure>
+      </div>
+      <div class="mu-slider-content">
+        <span></span>
+        <h2>HTH Worldwide</h2>
+        <p>HTH Coin proudly presents Help The Homeless Worldwide A NJ Nonprofit Corporation</p>
+        <a href="https://helpthehomelessworldwide.org" class="mu-read-more-btn">Learn More</a>
+      </div>
+    </div>
+    <!-- Start single slider item -->    
+  </section>
+  <!-- End Slider -->
+	  
+  <!-- Start service  -->
+  <section id="mu-service">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="mu-service-area">
+            <!-- Start single service -->
+            <div class="mu-service-single">
+              <span></span>
+              <h3>Worldwide Community</h3>
+              <p>Through the power of Social Media, HTH Coin has a growing Community worldwide</p>
+            </div>
+            <!-- Start single service -->
+            <!-- Start single service -->
+            <div class="mu-service-single">
+              <span></span>
+              <h3>Nonprofit Corporation</h3>
+              <p>Help The Homeless Worldwide A NJ Nonprofit Corporation is powered by HTH Coin</p>
+            </div>
+            <!-- Start single service -->
+            <!-- Start single service -->
+            <div class="mu-service-single">
+              <span></span>
+              <h3>Valued Partnership</h3>
+              <p>With our HTH Partnership we can offer reoccuring donations!</p>
+            </div>
+            <!-- Start single service -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End service  -->
 
-
-<!-- Subscribe section -->
-<section class="subscribe-section">
-    <div class="auto-container">
-        <div class="inner-container">
-            <div class="row clearfix">
-                <div class="title-column col-md-12 col-sm-12 col-xs-12">
-                    <div class="title centered">
-                        <h2 style="font-size: 4rem;">#FairChance - Spread the word!</h2>
+  <!-- Start features section -->
+  <section id="mu-features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="mu-features-area">
+            <!-- Start Title -->
+            <div class="mu-title">
+              <h2>Our Features</h2>
+              <p>Bringing Awareness to Homelessness and Cryptocurrency</p>
+            </div>
+            <!-- End Title -->
+            <!-- Start features content -->
+            <div class="mu-features-content">
+              <div class="row">
+                <div class="col-lg-4 col-md-4  col-sm-6">
+                  <div class="mu-single-feature">
+                    
+                    <h4>Giving Back</h4>
+                    <p>Guaranteed charity fees directly from the blockchain</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="mu-single-feature">
+                    
+                    <h4>Our Funds</h4>
+                    <p>Development funds to help aid HTH Worldwide</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Subscribe section -->
-
-<!--Main Footer-->
-<footer class="main-footer" style="background-image: url(images/homeless-2223116_1280.jpg);">
-    <!--Upper-->
-    <div class="footer-upper">
-        <div class="auto-container">
-            <div class="outer-box">
-                <!--Footer Logo-->
-                <div class="footer-logo"><a href="https://hthcoin.github.io/web/index.html><img src="HTH/logo.png" alt="" width="150"></a></div>
-
-                <div class="row clearfix">
-                    <div class="big-column col-md-5 col-sm-12 col-xs-12">
-                        <div class="row clearfix">
-                            <!--Footer Column-->
-                            <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                                <h3>Home</h3>
-                                <ul class="footer-links">
-                                  <li><a href="https://hthcoin.github.io/web/index.html#about" data-target="#about" class="scroll-to-target">About us</a></li>
-                                        <li><a href="https://hthcoin.github.io/web/index.html#features" data-target="#features" class="scroll-to-target">Features</a></li>
-                                        <li><a href="https://hthcoin.github.io/web/index.html#roadmap" data-target="#roadmap" class="scroll-to-target">Roadmap</a></li>
-                                        <li><a href="https://hthcoin.github.io/web/index.html#specs" data-target="#specs" class="scroll-to-target">Specs</a></li>
-                                        <li><a href="https://hthcoin.github.io/web/index.html#team" data-target="#team" class="scroll-to-target">Team</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                                <h3>Menu</h3>
-                                <ul class="footer-links">
-                                    <li><a href="https://hthcoin.github.io/web/index.html">Home</a></li>
-                                    <li><a href="https://hthcoin.github.io/web/Charity.html">Charity</a></li>
-                                    <li><a href="https://helpthehomelessworldwide.org">HTH Worldwide</a></li>
-                                <li class=""><a href="https://hthcoin.github.io/web/Partners.html">Partners</a></li>
-                                <li class=""><a href="https://hthcoin.github.io/web/Downloads.html">Downloads</a></li>
-                                    <li><a href="https://explorer.hth.world/" target="_blank">Explorer</a></li>
-                                    <li><a href="https://wallet.crypto-bridge.org/market/BRIDGE.HTH_BRIDGE.BTC" target="_blank">Exchanges</a></li>
-                                    <li class=""><a href="https://hthcoin.github.io/web/Resources.html">Resources</a></li>
-                                <li class=""><a href="https://hthcoin.github.io/web/Faq.html">FAQ</a></li>
-                                <li><a href="https://github.com/HTHcoin/HTH/wiki/HTH-Help-The-Homeless-Coin-wiki/" target="_blank">Wiki</a></li>
-                    <li><a href="https://github.com/HTHcoin/HTH/blob/master/Light_Paper.pdf">Light Paper</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="big-column col-md-7 col-sm-12 col-xs-12">
-                        <div class="row clearfix">
-                            <!--Footer Column-->
-                            <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                                <h3>Follow/Contact</h3>
-                                <ul class="footer-links">
-                                    <li><a href="mailto:hthcoin@gmail.com">hthcoin@gmail.com</a></li>
-                                    <li><a href="https://bitcointalk.org/index.php?topic=4578705.0" target="_blank" rel="nofollow noopener">Announcement</a></li>
-                                    <li><a href="https://fb.me/hth.World" target="_blank" rel="nofollow">Facebook</a></li>
-                                    <li><a href="https://twitter.com/HTHCoin" target="_blank" rel="nofollow">Twitter</a></li>
-                                    <li><a href="https://discord.gg/qjcs5TP" target="_blank" rel="nofollow">Discord</a></li>
-                                </ul>
-                            </div>
-
-                            <!--Footer Column-->
-                            <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                                <h3>HTH Coin</h3>
-                                <div class="text">
-                                    <p>The team at <strong> <font color="#debf12">Help The Homeless Coin</font></strong> is dedicated to supporting and focusing on those that need assistance by aiding charities with boots on the ground.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="mu-single-feature">
+                    
+                    <h4>Growing Community</h4>
+                    <p>Active community with an online and real-world presence</p>
+                  </div>
                 </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="mu-single-feature">
+                    
+                    <h4>Founders</h4>
+                    <p>A dedicated and passionate team of founding members</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="mu-single-feature">
+                  
+                    <h4>Masternodes</h4>
+                    <p>A resource where you can earn HTH Coin</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="mu-single-feature">
+                    
+                    <h4>Partnership Opportunities</h4>
+                    <p>A Partnership that gives donations on a reoccuring basis</p>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- End features content -->
+          </div>
         </div>
+      </div>
     </div>
+  </section>
+  <!-- End features section -->
 
-    <!--Bottom-->
-    <div class="footer-bottom">
-        <div class="auto-container">
-            <div class="copyright">Copyright <a href="https://hthcoin.github.io/web/index.html">Help The Homeless Coin</a> © 2018. All Rights Reserved.</div>
+  <!-- Start latest course section -->
+  <section id="mu-latest-courses">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="mu-latest-courses-area">
+
+            <!-- Start Title -->
+            <div class="mu-title">
+              <h2>HTH Partners</h2>
+              <p>Please visit our HTH <a href="partners.html">Partners</a> to Donate today!</p>
+            </div>
+            <!-- End Title -->
+            <!-- Start latest course content -->
+		  
+            <div id="mu-latest-course-slide" class="mu-latest-courses-content">
+              <div class="col-lg-4 col-md-4 col-xs-12">
+                <div class="mu-latest-course-single">
+                  <figure class="mu-latest-course-img">
+                    <a href="https://msmmoorefoundation.org"><img src="assets/img/courses/MSM.png" alt="img"></a>
+                    <figcaption class="mu-latest-course-imgcaption">
+                      <a href="https://msmmoorefoundation.org">MSM Moore Foundation</a>
+                   </figcaption>
+                  </figure>
+                  <div class="mu-latest-course-single-content">
+                    <h4><a href="https://msmmoorefoundation.org">About MSM Moore Foundation</a></h4>
+                    <p>A world in which every child attains the right to survival, protection, development and participation and to inspire breakthroughs in the way the world treats children and to achieve immediate and lasting change in their lives.</p>
+                    <div class="mu-latest-course-single-contbottom">
+                   </div>
+                  </div>
+                </div>
+              </div>
+		    
+              <div class="col-lg-4 col-md-4 col-xs-12">
+                <div class="mu-latest-course-single">
+                  <figure class="mu-latest-course-img">
+                    <a href="http://landforthehomeless.org"><img src="assets/img/courses/L4H.png" alt="img"></a>
+                    <figcaption class="mu-latest-course-imgcaption">
+                      <a href="#">Land For The Homeless</a>
+                    </figcaption>
+                  </figure>
+                  <div class="mu-latest-course-single-content">
+                    <h4><a href="http://landforthehomeless.org">Land for The Homeless</a></h4>
+                    <p>Land for the Homeless is a New Jersey based 501(c)3 public charity, founded at the start of 2015 by Kyler Dineen, which is working to construct a supportive tiny home community on a plot of land it owns in Central NJ for the homeless to be able to live upon legally and in peace, without fear of unwarranted eviction or harassment. </p>
+                    <div class="mu-latest-course-single-contbottom">
+                    </div>
+                  </div>
+                </div>
+              </div>
+		    
+              <div class="col-lg-4 col-md-4 col-xs-12">
+                <div class="mu-latest-course-single">
+                  <figure class="mu-latest-course-img">
+                    <a href="http://www.salvationarmy.gr/"><img src="assets/img/courses/byyourside.png" alt="img"></a>
+                    <figcaption class="mu-latest-course-imgcaption">
+                      <a href="http://www.salvationarmy.gr/">The Salvation Army of Athens, Greece</a>
+                    </figcaption>
+                  </figure>
+                  <div class="mu-latest-course-single-content">
+                    <h4><a href="http://www.salvationarmy.gr/">The Salvation Army of Athens, Greece</a></h4>
+                    <p>The Salvation Army is an international Christian movement that operates in 124 countries worldwide. The Salvation Army aims to spread the Christian message of God's love to all, as well as extend humanitarian aid, regardless of politics, religious beliefs or race.</p>
+                    <div class="mu-latest-course-single-contbottom">
+                    </div>
+                  </div>
+                </div>
+              </div>
+		    
+              <div class="col-lg-4 col-md-4 col-xs-12">
+                <div class="mu-latest-course-single">
+                  <figure class="mu-latest-course-img">
+                    <a href="https://grassrootscrisis.org"><img src="assets/img/courses/Grassroots.jpg" alt="img"></a>
+                    <figcaption class="mu-latest-course-imgcaption">
+                   </figcaption>
+                  </figure>
+                  <div class="mu-latest-course-single-content">
+                    <h4><a href="https://grassrootscrisis.org">Grassroots Crisis Intervention</a></h4>
+                    <p>Grassroots is a multi-service crisis intervention center providing 24-hour crisis intervention services, emergency and transitional shelter, and community education.</p>
+                    <div class="mu-latest-course-single-contbottom">
+                    </div>
+                  </div>
+                </div>
+              </div>
+		    
+              <div class="col-lg-4 col-md-4 col-xs-12">
+                <div class="mu-latest-course-single">
+                  <figure class="mu-latest-course-img">
+                    <a href="http://sgqurban.org/"><img src="assets/img/courses/SGQURBAN.png" alt="img"></a>
+                    <figcaption class="mu-latest-course-imgcaption">
+                     <a href="http://sgqurban.org/">SGQ Urban </a>
+                     </figcaption>
+                  </figure>
+                  <div class="mu-latest-course-single-content">
+                    <h4><a href="http://sgqurban.org/">SGQ Urban</a></h4>
+                    <p>Started in 2012, we are a philanthropic initiative that has been setup up to address various objectives with a special focus on developing countries and impoverished nations.</p>
+                    <div class="mu-latest-course-single-contbottom">
+                    </div>
+                  </div>
+                </div>
+              </div>
+		    
+              <div class="col-lg-4 col-md-4 col-xs-12">
+                <div class="mu-latest-course-single">
+                  <figure class="mu-latest-course-img">
+                    <a href="https://mycryptostats.com"><img src="assets/img/courses/mycryptostats.png" alt="img"></a>
+                    <figcaption class="mu-latest-course-imgcaption">
+                      <a href="https://mycryptostats.com">My Crypto Stats</a>
+                     </figcaption>
+                  </figure>
+                  <div class="mu-latest-course-single-content">
+                    <h4><a href="https://mycryptostats.com">My Crypto Stats</a></h4>
+                    <p>Get a complete view of your net worth, coin prices, and balances, and miner activity. Add any coins you want to follow and track. Add wallet addresses to retrieve your coin balances. Add expenses and cash outs to keep track of your total Profit/Loss. Set up price point alerts and receive an email when the price point it reached. Add the pools you mine against to get current unpaid balances. 788 coins available.</p>
+                    <div class="mu-latest-course-single-contbottom"> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            		  
+		  <div class="col-lg-4 col-md-4 col-xs-12">
+                <div class="mu-latest-course-single">
+                  <figure class="mu-latest-course-img">
+                    <a href="https://masternode-world.com"><img src="assets/img/courses/banner_MNworld_7.png" alt="img"></a>
+                    <figcaption class="mu-latest-course-imgcaption">
+                      <a href="https://masternode-world.com">Masternode World</a>
+                  </figcaption>
+                  </figure>
+                  <div class="mu-latest-course-single-content">
+                    <h4><a href="https://masternode-world.com">Masternode World</a></h4>
+                    <p>Shared Masternode solutions for everyone with the best comodities. For big and small investors, we pave the road to greatness.</p>
+                    <div class="mu-latest-course-single-contbottom">
+                    </div>
+                  </div>
+                </div>
+              </div>
+           
+            <!-- End latest course content -->
+          </div>
         </div>
+      </div>
     </div>
-</footer>
-<!-- End Footer -->
+  </section>
+  <!-- End latest course section -->
 
-</div>
-<!--End pagewrapper-->
+  <!-- Start our teacher -->
+  <section id="mu-our-teacher">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-our-teacher-area">
+            <!-- begain title -->
+            <div class="mu-title">
+              <h2>Our Founders</h2>
+              <p>The Help The Homeless Coin Founders</p>
+            </div>
+            <!-- end title -->
+            <!-- begain our teacher content -->
+            <div class="mu-our-teacher-content">
+              <div class="row">
+                <div class="col-lg-3 col-md-3  col-sm-6">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="assets/img/teachers/altcoincash.png" alt="teacher img">
+                      <div class="mu-our-teacher-social">
+                        <a href="https://twitter.com/gpuhot"><span class="fab fa-twitter"></span></a>
+			<a href="https://gpuhot.com"><span class="icon-gpupool"></span></a>
+                        <a href="https://discord.gg/FBFVFhv">
+                             <div>
+                               <span class="icon-favicon"></span></div></a>
+                      </div>
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>Altcoincash</h4>
+                      <span>Founder</span>
+                      <p>Cryptocurrency enthusiast who hails from Norway</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="assets/img/teachers/coderabbit.png" alt="teacher img">
+                    <!--  <div class="mu-our-teacher-social">
+                        <a href="#"><span class="fab fa-facebook"></span></a>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="#"><span class="fab fa-linkedin"></span></a>
+                        <a href="https://discord.gg/r7zKfy5"><span class="fab fa-discord"></span></a>
+                      </div> -->
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>Coderabbit</h4>
+                      <span>Founder</span>
+                      <p>Cryptocurrency enthusiast from Brazil</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="assets/img/teachers/devilking6105.png" alt="teacher img">
+                      <div class="mu-our-teacher-social">
+                        <a href="https://www.facebook.com/HelptheHomelessCoinOfficial"><span class="fab fa-facebook"></span></a>
+                        <a href="https://twitter.com/HTHCoin"><span class="fab fa-twitter"></span></a>
+                        <a href="https://www.linkedin.com/in/michael-howlett-1896617a/"><span class="fab fa-linkedin"></span></a>
+                        <a href="https://discord.gg/r7zKfy5"><span class="fab fa-discord"></span></a>
+                      </div>
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>Michael H</h4>
+                      <span>Founder</span>
+                      <p>Director of HTH Worldwide, Cryptocurrency enthusiast from New Jersey, USA</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="assets/img/teachers/dk808.png" alt="teacher img">
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>DK808</h4>
+                      <span>Founder</span>
+                      <p>Crypto enthusiast cashing in from Las Vegas, Nevada, USA</p>
+                    </div>
+                  </div>
+                </div>
 
-<!--Scroll to top-->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up" style="color:#fcc005"></span></div>
+            <div class="mu-our-teacher-content">
+              <div class="row">
+                <div class="col-lg-3 col-md-3  col-sm-6">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="assets/img/teachers/duhjeff.png" alt="teacher img">
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>DuhJeff</h4>
+                      <span>Founder</span>
+                      <p>Cryptocurrency enthusiast who sees it all in New York City, USA</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="assets/img/teachers/mrblackstuff.png" alt="teacher img">
+                      <div class="mu-our-teacher-social">
+                        <a href="https://www.linkedin.com/in/cecildaisy"><span class="fab fa-linkedin"></span></a>
+                        <a href="https://discord.gg/r7zKfy5"><span class="fab fa-discord"></span></a>
+                      </div>
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>Cecil D</h4>
+                      <span>Founder</span>
+                      <p>Cryptocurrency enthusiast from the United Kingdom</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="assets/img/teachers/CircuitBreaker.png" alt="teacher img">
+                      <div class="mu-our-teacher-social">
+                        <a href="https://discord.gg/r7zKfy5"><span class="fab fa-discord"></span></a>
+                      </div>
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>CircuitBreaker</h4>
+                      <span>Founder & Developer</span>
+                      <p>Blockchain Developer from the East Coast of the USA</p>
+                    </div>
+                  </div>
+                </div>
+              <!--  <div class="col-lg-3 col-md-3 col-sm-6">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="assets/img/teachers/dk808.png" alt="teacher img">
+                      <div class="mu-our-teacher-social">
+                        <a href="#"><span class="fab fa-facebook"></span></a>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                        <a href="#"><span class="fab fa-linkedin"></span></a>
+                        <a href="#"><span class="fab fa-google-plus"></span></a>
+                      </div>
+                    </figure>                    
+                    <div class="mu-ourteacher-single-content">
+                      <h4>DK808</h4>
+                      <span>Founder</span>
+                      <p>Crypto enthusiast cashing in from Las Vegas, Nevada, USA</p>
+                    </div>
+                  </div> -->
+                </div>
 
-<script src="HTH/jquery.js"></script>
-<script src="HTH/bootstrap.js"></script>
-<!--Revolution Slider-->
-<script src="HTH/jquery_004.js"></script>
-<script src="HTH/jquery_002.js"></script>
-<script src="HTH/revolution_003.js"></script>
-<script src="HTH/revolution_009.js"></script>
-<script src="HTH/revolution_005.js"></script>
-<script src="HTH/revolution_007.js"></script>
-<script src="HTH/revolution_008.js"></script>
-<script src="HTH/revolution.js"></script>
-<script src="HTH/revolution_006.js"></script>
-<script src="HTH/revolution_002.js"></script>
-<script src="HTH/revolution_004.js"></script>
-<script src="HTH/clipboard.js"></script>
-<script src="HTH/main-slider-script.js"></script>
-<!--End Revolution Slider-->
-<script src="HTH/jquery-ui.js"></script>
-<script src="HTH/jquery_003.js"></script>
-<script src="HTH/owl.js"></script>
-<script src="HTH/wow.js"></script>
-<script src="HTH/appear.js"></script>
-<script src="HTH/script.js"></script>
-<script>
-    var $progress = $(".progress"),
-        $bar = $(".progress__bar"),
-        update,
-        resetColors,
-        hth = 0,
-        btc = 0,
-        hthToBtc = 0,
-        to,
-        btcaddr = '3Kmqb2d9fBTq7kr66Hp5N47661QzS9dKoQ',
-        hthAddress = 'HF5rjaXU7s3QCKuSb6uYJvAeVa3qWC3MKm';
 
-    resetColors = function() {
 
-        $bar
-            .removeClass("progress__bar--green")
-            .removeClass("progress__bar--yellow")
-            .removeClass("progress__bar--orange")
-            .removeClass("progress__bar--blue");
+                  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End our teacher -->
 
-        $progress
-            .removeClass("progress--complete");
+ 
 
-    };
 
-    update = function() {
-        $.getJSON('https://api.coingecko.com/api/v3/coins/help-the-homeless-coin', function(res) {
-            var price = res.tickers[0].converted_last.btc;
-            /*price = price.split('0.')[1];
-            price = +price;*/
+<!-- Start footer -->
+  <footer id="mu-footer">
+    <!-- start footer top -->
+    <div class="mu-footer-top">
+      <div class="container">
+        <div class="mu-footer-top-area">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>Information</h4>
+                <ul>
+                  <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Information</a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="resources.html">Resources</a></li>                
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="https://github.com/HTHcoin/HTH/wiki/HTH-Help-The-Homeless-Coin-wiki/">HTH Wiki</a></li>
+                <li><a href="https://github.com/HTHcoin/HTH/blob/master/Light_Paper.pdf">Light Paper</a></li>
+              </ul>
+            </li>
+	
+			 <li class="dropdown">              
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Exchanges</a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://wallet.crypto-bridge.org/market/BRIDGE.HTH_BRIDGE.BTC">Crypto-Bridge</a></li>
+                <li><a href="https://smartrade.com/">SmartTrade</a></li>
+                <li><a href="https://novaexchange.com/market/BTC_HTH">Nova Exchange</a></li>
+                <li><a href="https://www.probitex.com/trade/index/market/hth_btc">ProBitEx</a></li>
+              </ul>
+       </li>
+			<li class="dropdown">
+	      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Partners</a>
+              <ul class="dropdown-menu" role="menu">
+		      <li><a href="partners.html">Partners</a></li>                
+                <li><a href="cryptopartners.html">Crypto Partners</a></li> 
+		       <li><a href="charity.html">HTH Charity</a></li>
+			</ul>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>Helpful Links</h4>
+                <ul>
+                  <li><a href="https://cmc.io/coins/help-the-homeless-coin">Coin Market Cap</a></li>
+                  <li><a href="https://www.coingecko.com/en/coins/help-the-homeless-coin">Coin Gecko</a></li>
+                  <li><a href="https://masternode.plus/coin/HTH">Masternodes</a></li>
+                  <li><a href="https://cointomine.today/calculator/coin/HTH/">HTH Calculator</a></li>
+                  <li><a href="https://wheretomine.io/coins/help-the-homeless.html">Where To Mine</a></li>                  
+                </ul>
+             </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+		      <h4>Social Media</h4>
+		      <ul>
+                      <li><a href="https://www.facebook.com/HelptheHomelessCoinOfficial"><span class="fab fa-facebook"></span></a></li>
+                      <li><a href="https://twitter.com/hthcoin"><span class="fab fa-twitter"></span></a></li>
+                      <li><a href="https://discord.gg/xqGjacW"><span class="fab fa-discord"></span></a></li>
+                      <li><a href="https://www.reddit.com/user/HTHCoin"><span class="fab fa-reddit"></span></a></li>
+                      <li><a href="https://www.youtube.com/channel/UCsKeJJnVF1xCSZpLmExLCNw"><span class="fab fa-youtube"></span></a></li>
+			      </ul>
+              </div>
+            </div> 
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>Contact</h4>
+                <address>
+                  <p>900 Barnegat Blvd N Unit 2406, Barnegat, New Jersey 08005, USA</p>
+                  <p>Phone: (848) 221-6383 </p>
+                  <p>Nonprofit Website: <a href="https://helpthehomelessworldwide.org" style="color: #debf12">HTH Worldwide</a></p>
+                  <p>Email: hthcoin@gmail.com</p>
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end footer top -->
+    <!-- start footer bottom -->
+    <div class="mu-footer-bottom">
+      <div class="container">
+        <div class="mu-footer-bottom-area">
+          <p>&copy; All Right Reserved. Designed by Devilking6105 using <a href="http://www.markups.io/" rel="nofollow">MarkUps.io</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- end footer bottom -->
+  </footer>
+  <!-- End footer -->
 
-            $('#jsLastPrice').text("1 HTH = " + price + " BTC");
-        }).fail(function(e) {
-            console.log(e);
-        });
+<!-- jQuery library -->
+  <script src="assets/js/jquery.min.js"></script>  
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/js/bootstrap.js"></script>   
+  <!-- Slick slider -->
+  <script type="text/javascript" src="assets/js/slick.js"></script>
+  <!-- Counter -->
+  <script type="text/javascript" src="assets/js/waypoints.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.counterup.js"></script>  
+  <!-- Mixit slider -->
+  <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+  
+  
+  <!-- Custom js -->
+  <script src="assets/js/custom.js"></script> 
 
-        $.getJSON('https://blockchain.info/q/addressbalance/'+ btcaddr +'?confirmations=1', function(balance) {
-            btc = +balance;
-        });
 
-        $.getJSON('https://api.crypto-bridge.org/api/v1/ticker', function(d) {
-            d.forEach(function(ticker) {
-                if(ticker.id === 'HTH_BTC') {
-                    hthToBtc = +ticker.last;
-
-                    return false;
-                }
-            });
-        });
-
-        $.getJSON('https://explorer.hth.world/ext/getaddress/' + hthAddress, function(res) {
-            console.log(res);
-
-            hth = +res.balance * 100000000;
-        }).fail(function(e) {
-            console.log(e);
-        });
-
-        $('.js-hth-addy').each(function(i, e) {
-            var addy = $(e).data('addy');
-            $.getJSON('https://explorer.hth.world/ext/getaddress/' + addy, function(res) {
-                $(e).text(parseInt(res.received).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
-            });
-        });
-
-        to = setInterval(function() {
-            if(hth) {
-                clearInterval(to);
-                to = null;
-
-                $('.js-raised').text(parseInt(hth / 100000000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
-            }
-
-        }, 60000);
-
-        setTimeout(function() {
-            update();
-        }, 60000 * 5);
-    };
-
-    $progress.addClass("progress--active");
-    update();
-
-    var clipboard = new ClipboardJS('.js-copy');
-
-    clipboard.on('success', function(e) {
-        alert('Address Copied!');
-
-        e.clearSelection();
-    });
-
-    var clip = new ClipboardJS('.js-hth-copy');
-    clip.on('success', function(e) {
-        alert('Address Copied!');
-
-        e.clearSelection();
-    });
-</script>
-
-</body></html>
+  </body>
+</html>
