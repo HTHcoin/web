@@ -6,42 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">   
 	  
 	  
-	<div id="popup_this">
-    <span class="button b-close">
-        <span>SCN September Promotion</span>
-    </span>
-    <h3>Donate SCN Today!</h3>
-    <p>During the month of September 2019, the team at SCN Coin will be donating to Help The Homeless Worldwide!! Please visit <a href="https://helpthehomelessworldwide.org/events-news"></a>HTH Worldwide for more information</p>
+	<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">SCN September Promotion!</h4>
+      </div>
+      <div class="modal-body">
+  During the month of September 2019, the team at SCN Coin will be donating to HTHW!! Please visit <a href="https://helpthehomelessworldwide.org/events-news">HTH Worldwide</a> for more information
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
 </div>
 	  
-	  <style>
-		  #popup_this {
-    top: 50%;
-    left: 50%;
-    text-align:center;
-    margin-top: -50px;
-    margin-left: -100px;
-    position: fixed;
-    background: #fff;
-    padding: 30px;
-}
-.b-close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    cursor: pointer;
-    color: #fff;
-    background: #ff0000;
-    padding: 5px 10px;
-}
-	  </style>
-	  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	  <script src="/path/to/jquery.bpopup.min.js"></script>
 	  <script>
-$( document ).ready(function() {
-    $('#popup_this').bPopup();
+		  $('button').click(function(){
+$('#myModal').modal('show');
 });
-</script>
+	  </script>
 	  
 	  
 	  
