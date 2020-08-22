@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: hth.world
+Token: d31cb5cfb1362936ed28546d6bacd4c63ca08a7521884676b5e331b6658f0639
